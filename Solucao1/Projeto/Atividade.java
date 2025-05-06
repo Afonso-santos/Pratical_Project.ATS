@@ -11,6 +11,7 @@ import java.io.*;
  * @version 09/05/24
  * Notas versão : --
  */
+
 public abstract class Atividade implements Comparable<Atividade>, Serializable
 {
     //variáveis de calsse
@@ -60,7 +61,7 @@ public abstract class Atividade implements Comparable<Atividade>, Serializable
         this.freqCardiaca = umaAtividade.getFreqCardiaca();
     }
     
-    public void setProximoCodigo(int proximoCodigo) {
+    public  void setProximoCodigo(int proximoCodigo) {
         Atividade.proximoCodAtividade = proximoCodigo;
     }
     // Getters e setters
