@@ -1,6 +1,6 @@
 package Projeto.test.Users;
 
-import Projeto.UtilizadorProfissional;
+import Projeto.src.main.java.UtilizadorProfissional;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;

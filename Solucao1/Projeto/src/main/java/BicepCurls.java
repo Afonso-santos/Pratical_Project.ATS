@@ -49,9 +49,21 @@ public class BicepCurls extends AtivRepsPeso
      * @return    consumo de calorias do treino
      */
     public double consumoCalorias(Utilizador utilizador){
-        double consumoCalorias = BicepCurls.MET * (utilizador.getFatorMultiplicativo() + this.getFatorRepeticoes(0.5, 0.4) + this.getFatorPeso(utilizador, 0.2, 0.4) + this.getFatorFreqCardiaca(utilizador)) 
-                                                * utilizador.getBMR() / (24 * 60 * 60)
-                                                * this.getTempo().toSecondOfDay();
+        if (utilizador == null || this.getTempo() == null) return 0;
+
+        double tempoSegundos = this.getTempo().toSecondOfDay();
+        if (tempoSegundos == 0) return 0;
+            
+        double fatorMultiplicativo = utilizador.getFatorMultiplicativo();
+        double fatorRepeticoes = this.getFatorRepeticoes(0.5, 0.4);
+        double fatorPeso = this.getFatorPeso(utilizador, 0.2, 0.4);
+        double fatorFreqCardiaca = this.getFatorFreqCardiaca(utilizador);
+        double bmr = utilizador.getBMR();
+            
+        double consumoCalorias = BicepCurls.MET * (fatorMultiplicativo + fatorRepeticoes + fatorPeso + fatorFreqCardiaca)
+            * bmr / (24 * 60 * 60) * tempoSegundos;
+
+
         return consumoCalorias;
     }
 
@@ -59,6 +71,7 @@ public class BicepCurls extends AtivRepsPeso
         Atividade a = new BicepCurls();
         Predicate<Atividade> p = at -> at instanceof BicepCurls;
         Function<Atividade,Double> f = at -> ((BicepCurls)at).getPeso();
+        if (consumoCalorias == 0) return a;
         double maxPeso = utilizador.infoDasAtividadesNumPeriodoQueRespeitamP(LocalDate.MIN, LocalDate.MAX, p, f)
                                    .stream().reduce((p1,p2) -> p1 > p2 ? p1 : p2).orElse(0.0);
         double peso = maxPeso == 0 ? utilizador.getPeso() : maxPeso * 0.8;

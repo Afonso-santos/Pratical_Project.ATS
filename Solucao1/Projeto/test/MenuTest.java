@@ -1,6 +1,6 @@
 package Projeto.test;
 
-import Projeto.Menu;
+import Projeto.src.main.java.Menu;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;

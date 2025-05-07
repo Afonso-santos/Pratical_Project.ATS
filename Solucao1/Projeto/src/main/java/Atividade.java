@@ -3,6 +3,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.io.*;
+import java.util.Objects;
 
 /**
  * Classe Atividade - classe abstrata que engloba os vários tipos de atividades desportivas
@@ -44,6 +45,7 @@ public abstract class Atividade implements Comparable<Atividade>, Serializable
      */
     public Atividade(LocalDateTime realizacao, LocalTime tempo, int freqCardiaca)
     {
+        if (realizacao == null || tempo == null) throw new NullPointerException("Data ou tempo não podem ser nulos");
         this.codAtividade = Atividade.proximoCodAtividade++;
         this.dataRealizacao = realizacao;
         this.tempo = tempo;
@@ -83,10 +85,12 @@ public abstract class Atividade implements Comparable<Atividade>, Serializable
     }
     
     public void setDataRealizacao(LocalDateTime dataRealizacao){
+        if (dataRealizacao == null) throw new NullPointerException("Data não pode ser nula");
         this.dataRealizacao = dataRealizacao;
     }
 
     public void setTempo(LocalTime tempo){
+        if (tempo == null) throw new NullPointerException("Tempo não pode ser nulo");
         this.tempo = tempo;
     }
     
@@ -109,6 +113,7 @@ public abstract class Atividade implements Comparable<Atividade>, Serializable
      * @return fator de intensidade da frequência cardíaca realizada durante a atividade
      */
     public double getFatorFreqCardiaca(Utilizador utilizador){
+        if (this.freqCardiaca == 0) throw new ArithmeticException("Frequência cardíaca não pode ser 0");
         double razaoFreqCardiaca = utilizador.getFreqCardiaca() / this.freqCardiaca;
         return (razaoFreqCardiaca - 2) * 0.4; //cada unidade da razão aumenta o fator em 0.4
     }
@@ -124,6 +129,8 @@ public abstract class Atividade implements Comparable<Atividade>, Serializable
         sb.append("Atividade\nId: ");
         sb.append(this.codAtividade);
         sb.append("\nData e hora: ");
+        if (this.dataRealizacao == null) sb.append("não definida");
+        else
         sb.append(this.dataRealizacao.format(formatter));
         sb.append("\nDuraçao: ");
         sb.append(this.tempo);
@@ -140,7 +147,9 @@ public abstract class Atividade implements Comparable<Atividade>, Serializable
         if (this==o) return true;
         if ((o==null)||(this.getClass()!=o.getClass())) return false;
         Atividade a = (Atividade) o;
-        return (((this.tempo).equals(a.getTempo()))&&(this.freqCardiaca ==a.getFreqCardiaca()) && ((this.dataRealizacao).equals(a.getDataRealizacao())));
+        return Objects.equals(this.tempo, a.getTempo()) &&
+           this.freqCardiaca == a.getFreqCardiaca() &&
+           Objects.equals(this.dataRealizacao, a.getDataRealizacao());
     }
 
     /**

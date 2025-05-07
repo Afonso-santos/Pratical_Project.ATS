@@ -1,9 +1,9 @@
 package Projeto.test.Atividades;
 
-import Projeto.AtivRepsPeso;
-import Projeto.Atividade;
-import Projeto.Utilizador;
-import Projeto.UtilizadorAmador;
+import Projeto.src.main.java.AtivRepsPeso;
+import Projeto.src.main.java.Atividade;
+import Projeto.src.main.java.Utilizador;
+import Projeto.src.main.java.UtilizadorAmador;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
