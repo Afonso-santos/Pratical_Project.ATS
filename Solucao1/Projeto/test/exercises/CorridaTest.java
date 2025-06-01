@@ -1,6 +1,10 @@
 package Projeto.test.exercises;
 
 import Projeto.*;
+import Projeto.Atividade;
+import Projeto.Corrida;
+import Projeto.Utilizador;
+import Projeto.UtilizadorAmador;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

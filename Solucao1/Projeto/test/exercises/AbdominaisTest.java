@@ -1,9 +1,15 @@
 package Projeto.test.exercises;
 
-import Projeto.src.main.java.Abdominais;
-import Projeto.src.main.java.Atividade;
-import Projeto.src.main.java.Utilizador;
-import Projeto.src.main.java.UtilizadorAmador;
+import Projeto.Abdominais;
+import Projeto.Atividade;
+import Projeto.Utilizador;
+import Projeto.UtilizadorAmador;
+import Projeto.src.main.java.*;
+
+//import Projeto.src.main.java.Abdominais;
+//import Projeto.src.main.java.Atividade;
+//import Projeto.src.main.java.Utilizador;
+//import Projeto.src.main.java.UtilizadorAmador;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

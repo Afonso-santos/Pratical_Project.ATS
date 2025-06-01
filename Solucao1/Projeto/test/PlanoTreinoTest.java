@@ -1,7 +1,13 @@
 package Projeto.test;
 
+
 import Projeto.*;
-import org.junit.jupiter.api.BeforeEach;
+import Projeto.Abdominais;
+import Projeto.Atividade;
+import Projeto.Corrida;
+import Projeto.PlanoTreino;
+import Projeto.Utilizador;
+import Projeto.UtilizadorAmador;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -72,7 +78,7 @@ class PlanoTreinoTest {
     @Test
     void caloriasDispendidas() {
         PlanoTreino plano = new PlanoTreino(LocalDate.of(2024, 5, 1));
-        Utilizador utilizador = new UtilizadorAmador("Teste", "Cidade", "teste@mail.com", 70, 75, 175, LocalDate.of(2000, 1, 1), 'M');
+        Utilizador utilizador = new Projeto.UtilizadorAmador("Teste", "Cidade", "teste@mail.com", 70, 75, 175, LocalDate.of(2000, 1, 1), 'M');
         Atividade atividade = new Corrida(LocalDateTime.now(), LocalTime.of(0, 30), 120, 5.0);
         plano.addAtividade(atividade, 2);
         double calorias = plano.caloriasDispendidas(utilizador);

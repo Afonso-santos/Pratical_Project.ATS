@@ -1,8 +1,9 @@
 package Projeto.test.Atividades;
 
-import Projeto.src.main.java.AtivDistAltimetria;
-import Projeto.src.main.java.Atividade;
-import Projeto.src.main.java.Utilizador;
+
+import Projeto.AtivDistAltimetria;
+import Projeto.Atividade;
+import Projeto.Utilizador;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

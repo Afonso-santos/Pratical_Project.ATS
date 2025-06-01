@@ -1,8 +1,9 @@
 package Projeto.test.Atividades;
 
-import Projeto.src.main.java.AtivRepeticoes;
-import Projeto.src.main.java.Atividade;
-import Projeto.src.main.java.Utilizador;
+
+import Projeto.AtivRepeticoes;
+import Projeto.Atividade;
+import Projeto.Utilizador;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;

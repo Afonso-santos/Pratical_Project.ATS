@@ -1,6 +1,11 @@
 package Projeto.test.Atividades;
 
 import Projeto.*;
+import Projeto.Atividade;
+import Projeto.Utilizador;
+import Projeto.UtilizadorAmador;
+import Projeto.UtilizadorPraticanteOcasional;
+import Projeto.UtilizadorProfissional;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
