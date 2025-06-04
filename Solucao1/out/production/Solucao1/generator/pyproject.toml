@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generator"
+version = "0.0.1"
+description = "Gera código Java para testes JUnit com Hypothesis"
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+    { name = "Afonso Dionísio", email = "a104276@alunos.uminho.pt" },
+    { name = "Miguel Gramoso", email = "aXXXXX@alunos.uminho.pt" }
+]
+
+dependencies = [
+    "requests > 2.26.0",
+    "black",
+    "hypothesis"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

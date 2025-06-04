@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorTrailTest.py
+# hypothesis_version: 6.133.0
+
+[0.0, 0.01, 0.5, 50.0, 100.0, 2000.0, 3000.0, 220, 2020, 2030, '\n}', 'Clone', 'ConstrutorCopia', 'ConstrutorVazio', 'ConsumoCalorias', 'Equals', 'GeraAtividade', 'GetFatorHard', 'ToString', 'TrailGenTest.java', '__main__', 'a', 'assertFalse', 'assertTrue', 'utf-8', 'w']

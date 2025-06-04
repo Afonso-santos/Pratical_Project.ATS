@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorUserTest.py
+# hypothesis_version: 6.133.0
+
+[6.25, -161, 100, 200, 250, 999, 1950, 2010, '\n}', 'Ana', 'Avenida da Liberdade', 'Carlos', 'Catarina', 'ConstrutorCopia', 'Equals', 'F', 'GetBMR', 'GetIdade', 'João', 'Largo da Paz', 'Luisa', 'M', 'Maria', 'Miguel', 'Pedro', 'Rua das Flores', 'Rui', 'Sofia', 'Travessa do Sol', '__main__', 'a', 'assertFalse', 'assertTrue', 'gmail.com', 'hotmail.com', 'outlook.com', 'utf-8', 'w', 'yahoo.com']

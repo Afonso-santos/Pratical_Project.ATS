@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorBTTTest.py
+# hypothesis_version: 6.133.0
+
+[0.0, 0.01, 1.0, 100.0, 1000.0, 5000.0, 200, 2020, 2030, '\n}', 'BttGenTest.java', 'Clone', 'ConstrutorCopia', 'ConstrutorVazio', 'ConsumoCalorias', 'Equals', 'GeraAtividade', 'GetFatorHard', 'ToString', '__main__', 'a', 'assertFalse', 'assertTrue', 'utf-8', 'w']

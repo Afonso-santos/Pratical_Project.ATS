@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorMenuTest.py
+# hypothesis_version: 6.133.0
+
+[-999999.99, 999999.99, -1000000, 100, 1900, 2100, 1000000, '\n}', '"', '", "', '/', 'ConstrucaoMenu', 'GetOpcaoInicial', 'HH:mm', 'HH:mm:ss', 'Ll', 'Lu', 'MenuGenTest.java', 'Nd', 'PedeDataComEntrada', 'PedeDoubleComEntrada', 'PedeIntComEntrada', 'PedeStringComEntrada', 'PedeTempoComEntrada', 'Po', 'Sair', 'Zs', '\\"', '__main__', 'a', 'utf-8', 'w']

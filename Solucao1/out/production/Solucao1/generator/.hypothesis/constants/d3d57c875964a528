@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorUserAmadorTest.py
+# hypothesis_version: 6.133.0
+
+[100, 200, 250, 999, 1950, 2010, 2020, 2024, 2025, '\n}', 'Ana', 'André', 'Avenida Central', 'Avenida da Liberdade', 'Bruno', 'Carlos', 'Catarina', 'Clone', 'ConstrutorComPeriodo', 'ConstrutorCopia', 'ConstrutorVazio', 'Equals', 'F', 'Inês', 'Joana', 'João', 'Largo da Paz', 'Luisa', 'M', 'Maria', 'Mariana', 'Miguel', 'Pedro', 'Praça da República', 'Ricardo', 'Rita', 'Rua Nova', 'Rua das Flores', 'Rua do Comércio', 'Rui', 'Sofia', 'Tiago', 'Travessa do Sol', 'UtilizadorNumPeriodo', '__main__', 'a', 'assertFalse', 'assertTrue', 'gmail.com', 'hotmail.com', 'live.com', 'outlook.com', 'sapo.pt', 'utf-8', 'w', 'yahoo.com']
