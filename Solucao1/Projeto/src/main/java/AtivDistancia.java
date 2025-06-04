@@ -1,5 +1,6 @@
 package Projeto;
-import java.time.*;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 /**
  * Classe AtivDistancia - classe abstrata que engloba as atividades em que é preciso saber a distância percorrida
@@ -53,6 +54,10 @@ public abstract class AtivDistancia extends Atividade
     }
 
     public void setDistancia(double distancia){
+        if (distancia < 0) {
+            this.distancia = 0.0;
+            return;
+        }
         this.distancia = distancia;
     }
 

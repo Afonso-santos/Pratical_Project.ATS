@@ -1,0 +1,2705 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Atividade.java</h1>
+
+<table class="src">
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package Projeto;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.time.LocalDateTime;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.time.LocalTime;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.time.format.DateTimeFormatter;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.*;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Objects;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>/**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Classe Atividade - classe abstrata que engloba os v&#225;rios tipos de atividades desportivas</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> *</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * @author Grupo10</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * @version 09/05/24</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> * Notas vers&#227;o : --</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''> */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public abstract class Atividade implements Comparable&#60;Atividade&#62;, Serializable</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>{</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    //vari&#225;veis de calsse</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private static int proximoCodAtividade = 1;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // vari&#225;veis de inst&#226;ncia</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private int codAtividade;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private LocalDateTime dataRealizacao; </span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private LocalTime tempo;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private int freqCardiaca;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Construtores de Atividade</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Atividade &#233; uma classe abstrata, logo, os construtores s&#243; v&#227;o ser invocados pelas suas sub-classes nos seus pr&#243;prios construtores, e n&#227;o para criar inst&#226;ncias de Atividade</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Construtor vazio</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Atividade()</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_37'/>
+37
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_37'>1</a>
+<span>
+1. &#60;init&#62; : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        this.codAtividade = Atividade.proximoCodAtividade++;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.dataRealizacao = LocalDateTime.now();</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.tempo = LocalTime.of(0,0);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.freqCardiaca = 0;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Construtor parametrizado</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Atividade(LocalDateTime realizacao, LocalTime tempo, int freqCardiaca)</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_48'/>
+48
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_48'>2</a>
+<span>
+1. &#60;init&#62; : negated conditional &rarr; KILLED<br/>
+2. &#60;init&#62; : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (realizacao == null || tempo == null) throw new NullPointerException(&#34;Data ou tempo n&#227;o podem ser nulos&#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_49'/>
+49
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_49'>1</a>
+<span>
+1. &#60;init&#62; : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        this.codAtividade = Atividade.proximoCodAtividade++;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.dataRealizacao = realizacao;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.tempo = tempo;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.freqCardiaca = freqCardiaca;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Construtor de c&#243;pia</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Atividade(Atividade umaAtividade)</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.codAtividade = umaAtividade.getCodAtividade();</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.dataRealizacao = umaAtividade.getDataRealizacao();</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.tempo = umaAtividade.getTempo();</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.freqCardiaca = umaAtividade.getFreqCardiaca();</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public  void setProximoCodigo(int proximoCodigo) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Atividade.proximoCodAtividade = proximoCodigo;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Getters e setters</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getCodAtividade(){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_72'/>
+72
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_72'>1</a>
+<span>
+1. getCodAtividade : replaced int return with 0 for Projeto/Atividade::getCodAtividade &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return this.codAtividade;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public LocalDateTime getDataRealizacao(){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_76'/>
+76
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_76'>1</a>
+<span>
+1. getDataRealizacao : replaced return value with null for Projeto/Atividade::getDataRealizacao &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return this.dataRealizacao;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public LocalTime getTempo(){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_80'/>
+80
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_80'>1</a>
+<span>
+1. getTempo : replaced return value with null for Projeto/Atividade::getTempo &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return this.tempo;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getFreqCardiaca(){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_84'/>
+84
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_84'>1</a>
+<span>
+1. getFreqCardiaca : replaced int return with 0 for Projeto/Atividade::getFreqCardiaca &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return this.freqCardiaca;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setDataRealizacao(LocalDateTime dataRealizacao){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_88'/>
+88
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_88'>1</a>
+<span>
+1. setDataRealizacao : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (dataRealizacao == null) throw new NullPointerException(&#34;Data n&#227;o pode ser nula&#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_89'/>
+89
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_89'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.dataRealizacao = dataRealizacao;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_90'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setTempo(LocalTime tempo){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_93'/>
+93
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_93'>1</a>
+<span>
+1. setTempo : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (tempo == null) throw new NullPointerException(&#34;Tempo n&#227;o pode ser nulo&#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.tempo = tempo;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_95'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_96'/>
+96
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_96'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    </span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setFreqCardiaca(int freqCardiaca){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.freqCardiaca = freqCardiaca;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_100'/>
+100
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_100'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_101'/>
+101
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_101'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_102'/>
+102
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_102'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * M&#233;todo que calcula o consumo de calorias de uma atividade, da maneira definida para essa atividade - deve ser implementado pelas sub-classes</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_103'/>
+103
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_103'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param  utilizador  utilizador que realiza a atividade</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return    consumo de calorias da atividade</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_107'/>
+107
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_107'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public abstract double consumoCalorias(Utilizador utilizador);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_108'/>
+108
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_108'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_110'/>
+110
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_110'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * M&#233;todo que calcula um fator de intensidade pela raz&#227;o entre a frequ&#234;ncia card&#237;aca a que &#233; feita a atividade e a frequ&#234;ncia card&#237;aca normal</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * </span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_112'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param utilizador utilizador que realiza a atividade</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_113'/>
+113
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_113'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return fator de intensidade da frequ&#234;ncia card&#237;aca realizada durante a atividade</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_114'/>
+114
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_114'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_115'/>
+115
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_115'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public double getFatorFreqCardiaca(Utilizador utilizador){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_116'/>
+116
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_116'>1</a>
+<span>
+1. getFatorFreqCardiaca : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (this.freqCardiaca == 0) throw new ArithmeticException(&#34;Frequ&#234;ncia card&#237;aca n&#227;o pode ser 0&#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_117'/>
+117
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_117'>1</a>
+<span>
+1. getFatorFreqCardiaca : Replaced integer division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        double razaoFreqCardiaca = utilizador.getFreqCardiaca() / this.freqCardiaca;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_118'/>
+118
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_118'>3</a>
+<span>
+1. getFatorFreqCardiaca : Replaced double subtraction with addition &rarr; KILLED<br/>
+2. getFatorFreqCardiaca : Replaced double multiplication with division &rarr; KILLED<br/>
+3. getFatorFreqCardiaca : replaced double return with 0.0d for Projeto/Atividade::getFatorFreqCardiaca &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return (razaoFreqCardiaca - 2) * 0.4; //cada unidade da raz&#227;o aumenta o fator em 0.4</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_119'/>
+119
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_119'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_120'/>
+120
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_120'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public abstract Atividade geraAtividade(Utilizador utilizador, double consumoCalorias);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_123'/>
+123
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_123'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_124'/>
+124
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_124'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * M&#233;todo toString, deve ser implementado pelas sub-classes</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_125'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_126'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String toString() {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_127'/>
+127
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_127'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(&#34;dd/MM/yyyy HH:mm:ss&#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_128'/>
+128
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_128'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        StringBuilder sb = new StringBuilder();</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_129'/>
+129
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_129'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(&#34;Atividade\nId: &#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_130'/>
+130
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_130'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(this.codAtividade);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_131'/>
+131
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_131'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(&#34;\nData e hora: &#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_132'/>
+132
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_132'>1</a>
+<span>
+1. toString : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (this.dataRealizacao == null) sb.append(&#34;n&#227;o definida&#34;);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_133'/>
+133
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_133'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        else</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_134'/>
+134
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_134'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(this.dataRealizacao.format(formatter));</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_135'/>
+135
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_135'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(&#34;\nDura&#231;ao: &#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_136'/>
+136
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_136'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(this.tempo);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_137'/>
+137
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_137'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(&#34;\nFrequencia Cardiaca: &#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_138'/>
+138
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_138'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(this.freqCardiaca);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_139'/>
+139
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_139'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        sb.append(&#34; bpm&#34;);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_140'/>
+140
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_140'>1</a>
+<span>
+1. toString : replaced return value with &#34;&#34; for Projeto/Atividade::toString &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return (sb.toString());</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_141'/>
+141
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_141'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_142'/>
+142
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_142'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_143'/>
+143
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_143'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_144'/>
+144
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_144'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * M&#233;todo equals</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_145'/>
+145
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_145'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_146'/>
+146
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_146'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean equals(Object o){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_147'/>
+147
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_147'>2</a>
+<span>
+1. equals : replaced boolean return with false for Projeto/Atividade::equals &rarr; NO_COVERAGE<br/>
+2. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (this==o) return true;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_148'/>
+148
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_148'>3</a>
+<span>
+1. equals : replaced boolean return with true for Projeto/Atividade::equals &rarr; NO_COVERAGE<br/>
+2. equals : negated conditional &rarr; KILLED<br/>
+3. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if ((o==null)||(this.getClass()!=o.getClass())) return false;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_149'/>
+149
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_149'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Atividade a = (Atividade) o;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_150'/>
+150
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_150'>2</a>
+<span>
+1. equals : negated conditional &rarr; KILLED<br/>
+2. equals : replaced boolean return with true for Projeto/Atividade::equals &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Objects.equals(this.tempo, a.getTempo()) &#38;&#38;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_151'/>
+151
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_151'>1</a>
+<span>
+1. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>           this.freqCardiaca == a.getFreqCardiaca() &#38;&#38;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_152'/>
+152
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_152'>1</a>
+<span>
+1. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>           Objects.equals(this.dataRealizacao, a.getDataRealizacao());</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_153'/>
+153
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_153'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_154'/>
+154
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_154'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_155'/>
+155
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_155'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_156'/>
+156
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_156'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * M&#233;todo clone, deve ser implementado pelas sub-classes</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_157'/>
+157
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_157'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_158'/>
+158
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_158'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public abstract Object clone();</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_159'/>
+159
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_159'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_160'/>
+160
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_160'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_161'/>
+161
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_161'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * M&#233;todo compareTo</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_162'/>
+162
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_162'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_163'/>
+163
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_163'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int compareTo(Atividade a){</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_164'/>
+164
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_164'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        int res = this.dataRealizacao.compareTo(a.getDataRealizacao());</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_165'/>
+165
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_165'>2</a>
+<span>
+1. compareTo : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+2. compareTo : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (res == 0) res = this.codAtividade - a.getCodAtividade();</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_166'/>
+166
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_166'>1</a>
+<span>
+1. compareTo : replaced int return with 0 for Projeto/Atividade::compareTo &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return res;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_167'/>
+167
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_167'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@56c5a6be_168'/>
+168
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_168'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_37'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setProximoCodigo()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setDataRealizacao()]</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setDataRealizacao()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_49'>49</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_49'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=<init>,-methodDesc=(Ljava/time/LocalDateTime;Ljava/time/LocalTime;I)V],-indexes=[25],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=<init>,-methodDesc=(Ljava/time/LocalDateTime;Ljava/time/LocalTime;I)V],-indexes=[25],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=<init>,-methodDesc=(Ljava/time/LocalDateTime;Ljava/time/LocalTime;I)V],-indexes=[25],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setDataRealizacao()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setTempo()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFreqCardiaca()]</li> <li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:getDistancia()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getTempo()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setFreqCardiaca()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getDataRealizacao()]</li> <li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:testParameterizedConstructor()]</li> <li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:getFatorVelocidade()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaProfissional()]</li> <li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:testParameterizedConstructor()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaPraticanteOcasional()]</li> <li>Projeto.test.Atividades.AtivRepsPesoTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepsPesoTest]/[method:testToString()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:compareTo()]</li> <li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:getVelocidade()]</li> <li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:setDistancia()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaAmador()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testConstrutorParametrizado()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testConstrutorCopia()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:getFatorHard()]</li> <li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:getFatorHard()]</li> <li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testParameterizedConstructor()]</li> <li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:testToString()]</li> <li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:testToString()]</li> <li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:testCopyConstructor()]</li> <li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:testToString()]</li> <li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:testToString()]</li> <li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:testToString()]</li> <li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:testToString()]</li> <li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:getRepeticoes()]</li> <li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:testToString()]</li> <li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:testCopyConstructor()]</li> <li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:testToString()]</li> <li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testToString()]</li> <li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:testToString()]</li> <li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testCopyConstructor()]</li> <li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:consumoCalorias()]</li> <li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:testClone()]</li> <li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:testClone()]</li> <li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:getAtividades()]</li> <li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:addAtividade()]</li> <li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:testClone()]</li> <li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:testClone()]</li> <li>Projeto.test.GestorDesportivoTest.[engine:junit-jupiter]/[class:Projeto.test.GestorDesportivoTest]/[method:testAddAtividadeAndShow()]</li> <li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:testEquals()]</li> <li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:testToString()]</li> <li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:testClone()]</li> <li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:testEquals()]</li> <li>Projeto.test.Atividades.AtivRepsPesoTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepsPesoTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:testEquals()]</li> <li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:testClone()]</li> <li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:testClone()]</li> <li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:testClone()]</li> <li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:testClone()]</li> <li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:testClone()]</li> <li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:getAtividadesNumPeriodo()]</li> <li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:atividadesQueRespeitamP()]</li> <li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:consumoCalorias()]</li> <li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:planoTreinoNumPeriodo()]</li> <li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:caloriasDispendidas()]</li> <li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:testToString()]</li> <li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testToString()]</li> <li>Projeto.test.GestorDesportivoTest.[engine:junit-jupiter]/[class:Projeto.test.GestorDesportivoTest]/[method:testAtividadesUtilizador()]</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_72'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getCodAtividade<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setProximoCodigo()]</span></span> replaced int return with 0 for Projeto/Atividade::getCodAtividade &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_76'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getDataRealizacao<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setDataRealizacao()]</span></span> replaced return value with null for Projeto/Atividade::getDataRealizacao &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_80'>80</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_80'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getTempo<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setTempo()]</span></span> replaced return value with null for Projeto/Atividade::getTempo &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_84'>84</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_84'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getFreqCardiaca<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFreqCardiaca()]</span></span> replaced int return with 0 for Projeto/Atividade::getFreqCardiaca &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>setDataRealizacao<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setDataRealizacao()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_93'>93</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_93'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>setTempo<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setTempo()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_116'>116</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_116'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getFatorFreqCardiaca<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaPraticanteOcasional()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_117'>117</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_117'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getFatorFreqCardiaca<br/><b>Killed by : </b>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:caloriasDispendidas()]</span></span> Replaced integer division with multiplication &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_118'>118</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_118'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getFatorFreqCardiaca<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaPraticanteOcasional()]</span></span> Replaced double subtraction with addition &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getFatorFreqCardiaca<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaPraticanteOcasional()]</span></span> Replaced double multiplication with division &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>getFatorFreqCardiaca<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaPraticanteOcasional()]</span></span> replaced double return with 0.0d for Projeto/Atividade::getFatorFreqCardiaca &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_132'>132</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_132'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testToString()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_140'>140</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_140'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testToString()]</span></span> replaced return value with &#34;&#34; for Projeto/Atividade::toString &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_147'>147</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_147'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for Projeto/Atividade::equals &rarr; NO_COVERAGE</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_148'>148</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_148'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='NO_COVERAGE'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for Projeto/Atividade::equals &rarr; NO_COVERAGE</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_150'>150</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_150'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()]</span></span> replaced boolean return with true for Projeto/Atividade::equals &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_151'>151</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_151'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_152'>152</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_152'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_165'>165</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_165'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=compareTo,-methodDesc=(LProjeto/Atividade;)I],-indexes=[17],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=compareTo,-methodDesc=(LProjeto/Atividade;)I],-indexes=[17],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=compareTo,-methodDesc=(LProjeto/Atividade;)I],-indexes=[17],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:consumoCalorias()]</li> <li>Projeto.test.GestorDesportivoTest.[engine:junit-jupiter]/[class:Projeto.test.GestorDesportivoTest]/[method:testAtividadesUtilizador()]</li> 
+</ul>
+</div></div> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=compareTo,-methodDesc=(LProjeto/Atividade;)I],-indexes=[12],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=compareTo,-methodDesc=(LProjeto/Atividade;)I],-indexes=[12],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=Projeto.Atividade,-method=compareTo,-methodDesc=(LProjeto/Atividade;)I],-indexes=[12],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:compareTo()]</li> <li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:consumoCalorias()]</li> <li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:consumoCalorias()]</li> <li>Projeto.test.GestorDesportivoTest.[engine:junit-jupiter]/[class:Projeto.test.GestorDesportivoTest]/[method:testAtividadesUtilizador()]</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@56c5a6be_166'>166</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@56c5a6be_166'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compareTo<br/><b>Killed by : </b>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:compareTo()]</span></span> replaced int return with 0 for Projeto/Atividade::compareTo &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>Projeto.test.Atividades.AtivRepsPesoTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepsPesoTest]/[method:setPeso()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepsPesoTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepsPesoTest]/[method:getPeso()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setProximoCodigo()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:getFatorAltimetria()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testConstrutorVazio()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:testDefaultConstructor()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:testDefaultConstructor()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:testGetFatorRepeticoes()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:setRepeticoes()] (1 ms)</li><li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testDefaultConstructor()] (1 ms)</li><li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:setAltimetria()] (1 ms)</li><li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:getRepeticoes()] (1 ms)</li><li>Projeto.test.Atividades.AtivRepsPesoTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepsPesoTest]/[method:getFatorPeso()] (2 ms)</li><li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:geraAtividade()] (0 ms)</li><li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:geraAtividade()] (0 ms)</li><li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:geraAtividade()] (0 ms)</li><li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:geraAtividade()] (0 ms)</li><li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:geraAtividade()] (1 ms)</li><li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:geraAtividade()] (1 ms)</li><li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:geraAtividade()] (1 ms)</li><li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:geraAtividade()] (1 ms)</li><li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:geraAtividade()] (2 ms)</li><li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:getAltimetria()] (26 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testEquals()] (1 ms)</li><li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepsPesoTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepsPesoTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:testEquals()] (0 ms)</li><li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaPraticanteOcasional()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaAmador()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFatorFreqCardiacaProfissional()] (0 ms)</li><li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:consumoCalorias()] (0 ms)</li><li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:caloriasDispendidas()] (1 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setTempo()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setDataRealizacao()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getFreqCardiaca()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:getDistancia()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getTempo()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:setFreqCardiaca()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:getDataRealizacao()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:testParameterizedConstructor()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:getFatorVelocidade()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:testParameterizedConstructor()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepsPesoTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepsPesoTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:compareTo()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:getVelocidade()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:setDistancia()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testConstrutorParametrizado()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testConstrutorCopia()] (0 ms)</li><li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:getFatorHard()] (0 ms)</li><li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:getFatorHard()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testParameterizedConstructor()] (0 ms)</li><li>Projeto.test.exercises.CorridaTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CorridaTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.exercises.FlexoesTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.FlexoesTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:testCopyConstructor()] (0 ms)</li><li>Projeto.test.exercises.CiclismoTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.CiclismoTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.exercises.AbdominaisTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.AbdominaisTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.exercises.BicepCurlsTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BicepCurlsTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.exercises.TrailTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.TrailTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.exercises.BttTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BttTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistanciaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistanciaTest]/[method:testCopyConstructor()] (1 ms)</li><li>Projeto.test.exercises.BenchPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.BenchPressTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.Atividades.AtividadeTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtividadeTest]/[method:testToString()] (1 ms)</li><li>Projeto.test.exercises.LegPressTest.[engine:junit-jupiter]/[class:Projeto.test.exercises.LegPressTest]/[method:testToString()] (0 ms)</li><li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testCopyConstructor()] (1 ms)</li><li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:getAtividades()] (0 ms)</li><li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:addAtividade()] (0 ms)</li><li>Projeto.test.GestorDesportivoTest.[engine:junit-jupiter]/[class:Projeto.test.GestorDesportivoTest]/[method:testAddAtividadeAndShow()] (0 ms)</li><li>Projeto.test.Atividades.AtivRepeticoesTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivRepeticoesTest]/[method:testToString()] (1 ms)</li><li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:testClone()] (0 ms)</li><li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:getAtividadesNumPeriodo()] (0 ms)</li><li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:atividadesQueRespeitamP()] (2 ms)</li><li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:planoTreinoNumPeriodo()] (0 ms)</li><li>Projeto.test.PlanoTreinoTest.[engine:junit-jupiter]/[class:Projeto.test.PlanoTreinoTest]/[method:testToString()] (1 ms)</li><li>Projeto.test.Atividades.AtivDistAltimetriaTest.[engine:junit-jupiter]/[class:Projeto.test.Atividades.AtivDistAltimetriaTest]/[method:testToString()] (8 ms)</li><li>Projeto.test.GestorDesportivoTest.[engine:junit-jupiter]/[class:Projeto.test.GestorDesportivoTest]/[method:testAtividadesUtilizador()] (47 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.19.4
+
+</body>
+</html>

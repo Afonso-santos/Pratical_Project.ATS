@@ -194,6 +194,9 @@ public abstract class Utilizador implements Serializable
     }
 
     public void setGenero(char genero) {
+        if (genero != 'M' && genero != 'F') {
+            return;
+        }
         this.genero = genero;
     }
     
