@@ -1,5 +1,6 @@
 package Projeto;
-import java.time.*;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 
 /**
@@ -66,6 +67,9 @@ public abstract class AtivRepeticoes extends Atividade
      * @return fator de intensidade da velocidade a que é realizada a atividade
      */
     public double getFatorRepeticoes(double valorNulo, double valorIncremento){
+        if (this.getTempo().toSecondOfDay() == 0) {
+            return 0.0; // Evita divisão por zero
+        }
         double repeticoesPorSegundo = this.repeticoes / this.getTempo().toSecondOfDay();
         return (repeticoesPorSegundo - valorNulo) * valorIncremento;
     }

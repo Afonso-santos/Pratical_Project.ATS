@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Projeto.test.Users.UtilizadorPraticanteOcasionalTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s -- in Projeto.test.Users.UtilizadorPraticanteOcasionalTest
