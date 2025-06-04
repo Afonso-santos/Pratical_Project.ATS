@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorRepsPesoTest.py
+# hypothesis_version: 6.133.0
+
+[0.0, 0.001, 40.0, 150.0, 300.0, 200, 500, 2020, 2030, '\n}', 'CloneTest', 'CompareTo', 'ConstrutorCopia', 'Equals', 'FatorPeso', 'SetGetPeso', 'ToStringTest', '__main__', 'a', 'assertFalse', 'assertTrue', 'utf-8', 'w']

@@ -66,7 +66,7 @@ class BicepCurlsTest {
         // Then
         assertEquals(LocalTime.MIN.plusSeconds(expectedTempoSec), atividade.getTempo(), "Expected tempo incorrect");
         assertEquals(0, atividade.getFreqCardiaca(), "Expected freqCardiaca to be 0");
-        assertTrue(atividade instanceof BicepCurls, "Expected atividade to be instance of BicepCurls");
+        assertInstanceOf(BicepCurls.class, atividade, "Expected atividade to be instance of BicepCurls");
         assertEquals(expectedReps, ((BicepCurls) atividade).getRepeticoes(), "Expected number of repetitions");
         assertEquals(peso, ((BicepCurls) atividade).getPeso(), 0.01, "Expected bicep curls weight");
     }

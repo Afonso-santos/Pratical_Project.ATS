@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorLegPressTest.py
+# hypothesis_version: 6.133.0
+
+[0.01, 5.0, 10.0, 300.0, 1500.0, 100, 200, 2020, 2030, '\n}', 'Clone', 'ConstrutorCopia', 'ConstrutorVazio', 'ConsumoCalorias', 'Equals', 'GeraAtividade', 'LegPressGenTest.java', 'ToString', '__main__', 'a', 'assertFalse', 'assertTrue', 'utf-8', 'w']

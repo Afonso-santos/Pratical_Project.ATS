@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorUserPraticamenteOcasionalTest.py
+# hypothesis_version: 6.133.0
+
+[100, 200, 250, 999, 1950, 2010, 2020, 2024, '\n}', 'Ana', 'Avenida da Liberdade', 'Carlos', 'Catarina', 'Clone', 'ConstrutorCopia', 'ConstrutorPeriodo', 'ConstrutorVazio', 'Equals', 'F', 'João', 'Largo da Paz', 'Luisa', 'M', 'Maria', 'Miguel', 'Pedro', 'Rua das Flores', 'Rui', 'Sofia', 'ToString', 'Travessa do Sol', 'UtilizadorNumPeriodo', '__main__', 'a', 'assertFalse', 'assertTrue', 'gmail.com', 'hotmail.com', 'outlook.com', 'utf-8', 'w', 'yahoo.com']

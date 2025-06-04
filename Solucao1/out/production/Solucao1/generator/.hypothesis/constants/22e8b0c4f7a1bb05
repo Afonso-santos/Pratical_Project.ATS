@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorDistAltimetriaTest.py
+# hypothesis_version: 6.133.0
+
+[-500.0, 0.001, 0.1, 100.0, 3000.0, 200, 2020, 2030, '\n}', 'CloneTest', 'CompareTo', 'ConstrutorCopia', 'ConstrutorDefault', 'Equals', 'EqualsNull', 'FatorAltimetria', 'SetGetAltimetria', 'SetGetDistancia', 'ToStringTest', '__main__', 'a', 'assertFalse', 'assertTrue', 'utf-8', 'w']

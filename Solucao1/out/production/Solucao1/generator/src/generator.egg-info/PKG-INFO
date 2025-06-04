@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: generator
+Version: 0.0.1
+Summary: Gera código Java para testes JUnit com Hypothesis
+Author-email: Afonso Dionísio <a104276@alunos.uminho.pt>, Miguel Gramoso <aXXXXX@alunos.uminho.pt>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>2.26.0
+Requires-Dist: black
+Requires-Dist: hypothesis

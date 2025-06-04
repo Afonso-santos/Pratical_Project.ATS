@@ -1,0 +1,4 @@
+# file: /home/ads/Universidade/3ano2sem/ATS/ATS/Solucao1/generator/src/generatorBenchPressTest.py
+# hypothesis_version: 6.133.0
+
+[0.01, 1.0, 10.0, 200.0, 1000.0, 200, 2020, 2030, '\n}', 'Clone', 'ConstrutorCopia', 'ConstrutorVazio', 'ConsumoCalorias', 'Equals', 'GeraAtividade', 'SettersGetters', 'ToString', '__main__', 'a', 'assertFalse', 'assertTrue', 'utf-8', 'w']
